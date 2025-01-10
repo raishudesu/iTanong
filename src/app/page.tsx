@@ -1,10 +1,11 @@
 import Hero from "@/components/hero";
 import Sample from "@/components/sample";
+import SampleAskQuestion from "@/components/sample-ask-questions";
 import React from "react";
 
 const Home = () => {
   return (
-    <div className="mt-16 max-w-2xl mx-auto">
+    <div className="py-16 max-w-2xl mx-auto">
       <section className="p-2">
         <Hero />
       </section>
@@ -18,7 +19,7 @@ const Home = () => {
         Ask Questions
       </h2>
       <section className="p-2">
-        <Sample />
+        <SampleAskQuestion />
       </section>
     </div>
   );

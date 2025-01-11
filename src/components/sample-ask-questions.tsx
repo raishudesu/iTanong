@@ -16,7 +16,7 @@ const SampleAskQuestion = () => {
         <CardHeader>
           <div className="flex gap-2 items-center">
             <SampleAvatar />
-            <CardTitle>John Doe</CardTitle>
+            <CardTitle>Bunny Doe</CardTitle>
           </div>
           <CardDescription>Ask anything about me.</CardDescription>
         </CardHeader>

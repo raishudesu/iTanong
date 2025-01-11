@@ -3,13 +3,15 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useTheme } from "next-themes";
 
-const SampleAvatar = () => {
+const AnonAvatar = () => {
   const { theme } = useTheme();
 
   return (
     <Avatar>
       <AvatarImage
-        src={`/logo/${theme === "dark" ? "bunny-light.svg" : "bunny-dark.svg"}`}
+        src={`/logo/${
+          theme === "dark" ? "anon-logo-dark.png" : "anon-logo-light.png"
+        }`}
         alt="Bunny Avatar"
       />
       <AvatarFallback>BN</AvatarFallback>
@@ -17,4 +19,4 @@ const SampleAvatar = () => {
   );
 };
 
-export default SampleAvatar;
+export default AnonAvatar;

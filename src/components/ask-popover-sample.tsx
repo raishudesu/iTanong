@@ -15,10 +15,10 @@ import {
 const AskPopoverSample = () => {
   return (
     <PopoverRoot>
-      <PopoverTrigger variant="default">Ask</PopoverTrigger>
+      <PopoverTrigger variant="default">Ask this Bunny</PopoverTrigger>
       <PopoverContent className="h-[200px] w-[364px]">
         <PopoverForm onSubmit={(note) => console.log("Note submitted:", note)}>
-          <PopoverLabel>Ask</PopoverLabel>
+          <PopoverLabel>Ask this Bunny</PopoverLabel>
           <PopoverTextarea />
           <PopoverFooter>
             <PopoverCloseButton />

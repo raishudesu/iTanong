@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import PopoverFormForSample from "./pop-over-for-sample";
+import AnonAvatar from "./anon-avatar";
 
 const Sample = () => {
   const sampleDate = new Date().toString();
@@ -14,7 +15,10 @@ const Sample = () => {
     <div>
       <Card>
         <CardHeader>
-          <CardTitle>Anonymous</CardTitle>
+          <div className="flex gap-2 items-center">
+            <AnonAvatar />
+            <CardTitle>Anonymous Bunny</CardTitle>
+          </div>
           <CardDescription>{sampleDate}</CardDescription>
         </CardHeader>
         <CardContent>

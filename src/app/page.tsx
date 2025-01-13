@@ -12,6 +12,7 @@ const Home = () => {
       <h2 className="text-center mt-16 scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
         Answer Questions
       </h2>
+
       <section className="p-2">
         <Sample />
       </section>

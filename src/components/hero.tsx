@@ -1,12 +1,12 @@
 import React from "react";
 import { Button } from "./ui/button";
-import Logo from "./logo";
+import DisplayLogo from "./display-logo";
 
 const Hero = () => {
   return (
     <div className="flex flex-col items-center text-center">
       <div className="relative h-20 w-20">
-        <Logo />
+        <DisplayLogo />
       </div>
       <h1 className="font-extrabold md:text-7xl text-[10vw] leading-none dark:bg-gradient-to-b from-foreground dark:to-zinc-400 bg-clip-text bg-zinc-800 text-transparent tracking-tighter text-center">
         Let the Bunnies Know About You.

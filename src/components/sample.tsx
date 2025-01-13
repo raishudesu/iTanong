@@ -11,6 +11,7 @@ import AnonAvatar from "./anon-avatar";
 
 const Sample = () => {
   const sampleDate = new Date().toString();
+
   return (
     <div>
       <Card>

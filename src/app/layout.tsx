@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/navigation";
 import { ThemeProvider } from "@/providers/theme-provider";
+import MobileViewNavigator from "@/components/mobile-view-navigator";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
       >
         <ThemeProvider
           attribute="class"
@@ -36,9 +37,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navigation />
-          <main className="flex flex-cool gap-8 row-start-2 items-center sm:items-start">
+          <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
             {children}
           </main>
+          <MobileViewNavigator />
         </ThemeProvider>
       </body>
     </html>
